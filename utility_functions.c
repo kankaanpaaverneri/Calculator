@@ -67,8 +67,7 @@ void free_list(node *root) {
 float potency(float base, float expo) {
 	int i = 0;
 	float result = base;
-	for(i = 0; i < expo; i++) {
-		result = base;
+	for(i = 0; i < expo-1; i++) {
 		result = result*base;
 	}
 	return result;
